@@ -14,12 +14,10 @@ body > div {
 
 header {
   display: flex;
-  width: 800px;
   justify-content: space-between;
-}
 
-h1 {
-    margin-left: 50px;
+  width: 800px;
+  padding: 24px 0 24px 12px;
 }
 
 nav {
