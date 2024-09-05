@@ -69,7 +69,7 @@ nav > button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: calc(var(--main-page-gap) * 0.25);
+  gap: var(--main-page-gap);
 
   width: 100%;
 }
@@ -82,7 +82,7 @@ nav > button {
 .separator {
   background-color: var(--accent-color);
   height: 40px;
-  margin: 12px 24px;
+  margin: 0 24px;
   width: 95%;
   border-radius: 8px;
 }
