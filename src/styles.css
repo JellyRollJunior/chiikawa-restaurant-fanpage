@@ -34,3 +34,12 @@ nav > button {
     width: 900px;
 }
 
+.restaurant-description {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 400px;
+    text-align: center;
+    background-color: rgb(222, 243, 249);
+}
