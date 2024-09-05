@@ -5,18 +5,16 @@
   padding: 0;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-}
-
+body,
 body > div {
-  max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
   display: flex;
-  width: 700px;
+  width: 800px;
   justify-content: space-between;
 }
 
@@ -33,3 +31,8 @@ nav {
 nav > button {
   padding: 15px;
 }
+
+.hero-image {
+    width: 900px;
+}
+
