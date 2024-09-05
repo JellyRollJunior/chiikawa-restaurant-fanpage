@@ -18,7 +18,7 @@
 html {
   --accent-color: #ef7472;
   --main-page-width: 900px;
-  --main-page-gap: 24px;
+  --main-page-gap: 20px;
 
   background-color: rgb(233, 248, 252);
 }
@@ -46,17 +46,22 @@ header {
 }
 
 h1 {
+  display: flex;
+  align-items: center;
+
   font-size: 2rem;
+  text-align: center;
 }
 
 nav {
   display: flex;
   gap: 8px;
-  height: 50px;
+  height: 56px;
 }
 
 nav > button {
   padding: 15px;
+  border-radius: 8px;
   background-color: var(--accent-color);
 }
 
@@ -79,7 +84,7 @@ nav > button {
   height: 40px;
   margin: 12px 24px;
   width: 95%;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 .restaurant-description {
