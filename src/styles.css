@@ -7,18 +7,22 @@
 }
 
 html {
+  --accent-color: #ef7472;
+  --main-page-width: 900px;
+
   background-color: rgb(233, 248, 252);
 }
 
 body,
-body > div {
+.main-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-body > div {
+.main-page {
+  width: var(--main-page-width);
   background-color: white;
 }
 
@@ -27,15 +31,15 @@ body > div {
   flex-direction: column;
   align-items: center;
 
-  width: 900px;
+  width: 100%;
 }
 
 header {
   display: flex;
   justify-content: space-between;
 
-  width: 720px;
-  padding: 24px 0 24px 12px;
+  width: 92%;
+  padding: 24px 0px;
 }
 
 nav {
@@ -46,15 +50,15 @@ nav {
 
 nav > button {
   padding: 15px;
-  background-color: orange;
+  background-color: var(--accent-color);
 }
 
 .hero-image {
-  width: 800px;
+  width: calc(var(--main-page-width) * 0.85);
 }
 
 .separator {
-  background-color: orange;
+  background-color: var(--accent-color);
   height: 40px;
   margin: 12px 24px;
   width: 95%;
