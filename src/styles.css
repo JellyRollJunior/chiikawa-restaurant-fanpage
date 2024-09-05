@@ -12,6 +12,10 @@ body > div {
     align-items: center;
 }
 
+body > div {
+    background-color: rgb(222, 243, 249);
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -28,10 +32,16 @@ nav {
 
 nav > button {
   padding: 15px;
+  background-color: rgb(255, 197, 207);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
 }
 
 .hero-image {
-    width: 900px;
+    width: 800px;
 }
 
 .restaurant-description {
@@ -40,6 +50,6 @@ nav > button {
     justify-content: center;
 
     height: 400px;
+    width: 900px;
     text-align: center;
-    background-color: rgb(222, 243, 249);
 }
