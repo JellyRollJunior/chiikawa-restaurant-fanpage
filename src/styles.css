@@ -14,10 +14,20 @@ body > div {
   max-width: 1000px;
 }
 
+header {
+  display: flex;
+  width: 700px;
+  justify-content: space-between;
+}
+
+h1 {
+    margin-left: 50px;
+}
+
 nav {
-    display: flex;
-    gap: 8px;
-    height: 50px;
+  display: flex;
+  gap: 8px;
+  height: 50px;
 }
 
 nav > button {
