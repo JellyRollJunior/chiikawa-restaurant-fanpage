@@ -6,20 +6,24 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: rgb(233, 248, 252);
+}
+
 body,
 body > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 body > div {
-    background-color: rgb(222, 243, 249);
+  background-color: white;
 }
 
 #content {
-    width: 900px;
+  width: 900px;
 }
 
 header {
@@ -38,31 +42,31 @@ nav {
 
 nav > button {
   padding: 15px;
-  background-color: rgb(255, 197, 207);
+  background-color: orange;
 }
 
 .hero {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-image {
-    width: 800px;
+  width: 800px;
 }
 
 .separator {
-    background-color: orange;
-    height: 40px;
-    margin: 12px 24px;
-    border-radius: 10px;
+  background-color: orange;
+  height: 40px;
+  margin: 12px 24px;
+  border-radius: 10px;
 }
 
 .restaurant-description {
-    display:flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    height: 400px;
-    width: 100%;
-    text-align: center;
+  height: 400px;
+  width: 100%;
+  text-align: center;
 }
