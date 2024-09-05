@@ -3,12 +3,14 @@
 *::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body,
 body > div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -16,11 +18,15 @@ body > div {
     background-color: rgb(222, 243, 249);
 }
 
+#content {
+    width: 900px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
 
-  width: 800px;
+  width: 720px;
   padding: 24px 0 24px 12px;
 }
 
@@ -44,12 +50,19 @@ nav > button {
     width: 800px;
 }
 
+.separator {
+    background-color: orange;
+    height: 40px;
+    margin: 12px 24px;
+    border-radius: 10px;
+}
+
 .restaurant-description {
     display:flex;
     align-items: center;
     justify-content: center;
 
     height: 400px;
-    width: 900px;
+    width: 100%;
     text-align: center;
 }
