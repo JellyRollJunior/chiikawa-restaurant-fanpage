@@ -23,6 +23,10 @@ body > div {
 }
 
 #content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   width: 900px;
 }
 
@@ -45,11 +49,6 @@ nav > button {
   background-color: orange;
 }
 
-.hero {
-  display: flex;
-  justify-content: center;
-}
-
 .hero-image {
   width: 800px;
 }
@@ -58,6 +57,7 @@ nav > button {
   background-color: orange;
   height: 40px;
   margin: 12px 24px;
+  width: 95%;
   border-radius: 10px;
 }
 
