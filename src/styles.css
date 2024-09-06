@@ -154,6 +154,7 @@ nav > button {
 .hours-and-location > div > h3 {
   font-size: 2rem;
 }
+
 .hours-and-location > div > h2 {
   margin-top: -16px;
   font-size: 5rem;
@@ -161,6 +162,7 @@ nav > button {
 
 .hours {
   font-family: monospace;
+  white-space: pre-line;
 }
 
 .hours-and-location > img {

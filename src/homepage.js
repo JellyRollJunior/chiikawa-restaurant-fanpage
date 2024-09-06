@@ -1,5 +1,7 @@
 import chiikawaRamen from "./images/chiikawa-ramen.jpg";
+
 import { Helper } from "./helper.js";
+
 export { Homepage };
 
 const Homepage = (function () {

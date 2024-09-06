@@ -1,11 +1,12 @@
 import "./styles.css";
 import { Homepage } from "./homepage.js";
 import { MenuPage } from "./menu.js";
+import { ContactPage } from "./contact.js";
 
 const TabController = (function() {
     
     // initial render
-    // Homepage.renderHomepage();
+    Homepage.renderHomepage();
 
     const navigationMenu = document.querySelector("nav");
     const ClickHandlerNavigationMenu = (event) => {
@@ -21,6 +22,7 @@ const TabController = (function() {
                 MenuPage.renderMenuPage();
                 break;
             case "nav-contact":
+                ContactPage.renderContactPage();
                 break;
             default:
                 Homepage.renderHomepage();

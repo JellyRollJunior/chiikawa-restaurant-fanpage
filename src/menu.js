@@ -6,7 +6,9 @@ import rakko from "./images/rakko.png";
 import pajamaParties from "./images/pajama-parties.png";
 import momonga from "./images/momonga.png";
 import shisa from "./images/shisa.png";
+
 import { Helper } from "./helper.js";
+
 export { MenuPage };
 
 const MenuPage = (function () {
