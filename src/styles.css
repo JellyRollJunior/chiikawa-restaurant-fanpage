@@ -96,4 +96,5 @@ nav > button {
   width: 100%;
   text-align: center;
   font-family: "rocksalt";
+  white-space: pre-line;
 }

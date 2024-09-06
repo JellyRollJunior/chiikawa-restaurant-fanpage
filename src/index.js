@@ -1,3 +1,4 @@
 import "./styles.css";
+import { Homepage } from "./homepage.js";
 
-console.log("poopy test");
+Homepage.renderHomepage();
