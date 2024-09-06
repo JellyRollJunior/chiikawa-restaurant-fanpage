@@ -17,6 +17,7 @@
 
 html {
   --accent-color: #ef7472;
+  --accent-text-color: black;
   --main-page-width: 900px;
   --page-section-gap: 20px;
   --menu-card-height: 250px;
@@ -63,6 +64,7 @@ nav {
 nav > button {
   padding: 15px;
   border-radius: 8px;
+  color: var(--accent-text-color);
   background-color: var(--accent-color);
 }
 
@@ -85,6 +87,9 @@ nav > button {
   justify-content: center;
   align-items: center;
 
+  font-family: "rocksalt";
+  letter-spacing: 4px;
+  color: var(--accent-text-color);
   background-color: var(--accent-color);
   height: 40px;
   margin: 0 24px;
