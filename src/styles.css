@@ -80,6 +80,7 @@ nav > button {
 
 .hero-image {
   width: calc(var(--main-page-width) * 0.85);
+  border-radius: 4px;
 }
 
 .separator {
@@ -166,4 +167,8 @@ nav > button {
   object-fit: contain;
   width: 100%;
   border-radius: 8px;
+}
+
+.bio {
+  padding-top: 8px;
 }
