@@ -138,7 +138,28 @@ nav > button {
 .hours-and-location {
   display: grid;
   grid-template-columns: 300px 1fr;
-  width: 98%;
+  width: 90%;
+}
+
+.hours-and-location > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-right: 45px;
+}
+
+.hours-and-location > div > h3 {
+  font-size: 2rem;
+}
+.hours-and-location > div > h2 {
+  margin-top: -16px;
+  font-size: 5rem;
+}
+
+.hours {
+  font-family: monospace;
 }
 
 .hours-and-location > img {
