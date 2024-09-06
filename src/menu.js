@@ -37,11 +37,15 @@ const MenuPage = (function () {
 
     const createRamenMenu = () => {
         return createMenu(
-            createCard(chiikawa, "Shio Ramen", "It's yummy. Please buy or he cry"),
+            createCard(
+                chiikawa,
+                "Shio Ramen",
+                "It's yummy. Please buy or he cry"
+            ),
             createCard(hachiware, "Charumera", "His favorite charumera"),
             createCard(usagi, "urururuu", "Yaha yaha uuuuunma"),
             createCard(momonga, "Shoyu Ramen", "This guy is very annoying"),
-            createCard(rakko, "Tsukemen", "Also yummy btw"),
+            createCard(rakko, "Tsukemen", "Also yummy btw")
         );
     };
 
@@ -56,7 +60,7 @@ const MenuPage = (function () {
         return createMenu(
             createCard(shisa, "Satapanbin", "Ureshisa - nodo kawaichau kara"),
             createCard(pajamaParties, "Miso Ramen", "u u wa wa uwa"),
-            createCard(kurimanju, "Parfait", "Kurimanju is my favorite"),
+            createCard(kurimanju, "Parfait", "Kurimanju is my favorite")
         );
     };
 

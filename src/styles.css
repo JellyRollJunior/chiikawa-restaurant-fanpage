@@ -134,3 +134,15 @@ nav > button {
   font-family: "rocksalt";
   margin-bottom: 6px;
 }
+
+.hours-and-location {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  width: 98%;
+}
+
+.hours-and-location > img {
+  object-fit: contain;
+  width: 100%;
+  border-radius: 8px;
+}

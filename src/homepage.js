@@ -5,7 +5,7 @@ export { Homepage };
 const Homepage = (function () {
     const createHeroImage = () => {
         const heroImage = document.createElement("img");
-        heroImage.classList.add("hero-image")
+        heroImage.classList.add("hero-image");
         heroImage.src = chiikawaRamen;
         return heroImage;
     };
@@ -13,7 +13,7 @@ const Homepage = (function () {
     const createDescription = () => {
         const description = document.createElement("div");
         description.classList.add("restaurant-description");
-        description.textContent = `This is the best restaurant ever!\nI love Shisa and all the cute little animals there!`
+        description.textContent = `This is the best restaurant ever!\nI love Shisa and all the cute little animals there!`;
         return description;
     };
 

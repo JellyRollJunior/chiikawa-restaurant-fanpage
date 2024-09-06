@@ -5,7 +5,7 @@ import { MenuPage } from "./menu.js";
 const TabController = (function() {
     
     // initial render
-    Homepage.renderHomepage();
+    // Homepage.renderHomepage();
 
     const navigationMenu = document.querySelector("nav");
     const ClickHandlerNavigationMenu = (event) => {
