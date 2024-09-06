@@ -19,6 +19,7 @@ html {
   --accent-color: #ef7472;
   --main-page-width: 900px;
   --main-page-gap: 20px;
+  --menu-card-height: 250px;
 
   background-color: rgb(233, 248, 252);
 }
@@ -74,12 +75,15 @@ nav > button {
   width: 100%;
 }
 
-
 .hero-image {
   width: calc(var(--main-page-width) * 0.85);
 }
 
 .separator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: var(--accent-color);
   height: 40px;
   margin: 0 24px;
@@ -97,4 +101,16 @@ nav > button {
   text-align: center;
   font-family: "rocksalt";
   white-space: pre-line;
+}
+
+.restaurant-menu {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  border: 2px solid red;
+}
+
+.menu-item {
+  height: var(--menu-card-height);
+  border: 2px solid black;
 }
