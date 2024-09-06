@@ -1,10 +1,11 @@
 import "./styles.css";
 import { Homepage } from "./homepage.js";
+import { MenuPage } from "./menu.js";
 
 const TabController = (function() {
     
     // initial render
-    // Homepage.renderHomepage();
+    Homepage.renderHomepage();
 
     const navigationMenu = document.querySelector("nav");
     const ClickHandlerNavigationMenu = (event) => {
@@ -17,6 +18,7 @@ const TabController = (function() {
                 Homepage.renderHomepage();
                 break;
             case "nav-menu":
+                MenuPage.renderMenuPage();
                 break;
             case "nav-contact":
                 break;
