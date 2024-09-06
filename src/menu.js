@@ -1,6 +1,11 @@
+import chiikawa from "./images/chiikawa.png";
+import hachiware from "./images/hachiware.png";
+import usagi from "./images/usagi.png";
 import kurimanju from "./images/kurimanju.png";
+import rakko from "./images/rakko.png";
+import pajamaParties from "./images/pajama-parties.png";
+import momonga from "./images/momonga.png";
 import shisa from "./images/shisa.png";
-import ramenSan from "./images/ramen-san.png";
 export { MenuPage };
 
 const MenuPage = (function () {
@@ -38,30 +43,26 @@ const MenuPage = (function () {
 
     const createRamenMenu = () => {
         return createMenu(
-            createCard(kurimanju, "Shio Ramen", "It's yummy. Please buy it"),
-            createCard(),
-            createCard(),
-            createCard(),
-            createCard()
+            createCard(chiikawa, "Shio Ramen", "It's yummy. Please buy or he cry"),
+            createCard(hachiware, "Charumera", "His favorite charumera"),
+            createCard(usagi, "urururuu", "Yaha yaha uuuuunma"),
+            createCard(momonga, "Shoyu Ramen", "This guy is very annoying"),
+            createCard(rakko, "Tsukemen", "Also yummy btw"),
         );
     };
 
     const createDrinkMenu = () => {
         return createMenu(
-            createCard(
-                ramenSan,
-                "sanpincha",
-                "nomimono no mono osusumeshimasu"
-            ),
-            createCard()
+            createCard(shisa, "Sanpincha", "Recommended by shisa"),
+            createCard(kurimanju, "Beer", "AHHHHHHHHHH")
         );
     };
 
     const createDessertMenu = () => {
         return createMenu(
-            createCard(shisa, "satapanbin", "ureshisa - nodo kawaichau kara"),
-            createCard(),
-            createCard()
+            createCard(shisa, "Satapanbin", "Ureshisa - nodo kawaichau kara"),
+            createCard(pajamaParties, "Miso Ramen", "u u wa wa uwa"),
+            createCard(kurimanju, "Parfait", "Kurimanju is my favorite"),
         );
     };
 

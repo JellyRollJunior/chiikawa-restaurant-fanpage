@@ -2,8 +2,6 @@ import chiikawaRamen from "./images/chiikawa-ramen.jpg";
 export { Homepage };
 
 const Homepage = (function () {
-    const contentRoot = document.querySelector("div#content");
-
     const createHeroImage = () => {
         const heroImage = document.createElement("img");
         heroImage.classList.add("hero-image")
@@ -24,6 +22,7 @@ const Homepage = (function () {
         return description;
     };
 
+    const contentRoot = document.querySelector("div#content");
     const appendToRoot = (...elements) => {
         for (const element of elements) {
             contentRoot.appendChild(element);
