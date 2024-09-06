@@ -18,7 +18,7 @@
 html {
   --accent-color: #ef7472;
   --main-page-width: 900px;
-  --main-page-gap: 20px;
+  --page-section-gap: 20px;
   --menu-card-height: 250px;
 
   background-color: rgb(233, 248, 252);
@@ -35,7 +35,7 @@ body,
 .main-page {
   width: var(--main-page-width);
   background-color: white;
-  gap: var(--main-page-gap);
+  gap: var(--page-section-gap);
 }
 
 header {
@@ -43,7 +43,7 @@ header {
   justify-content: space-between;
 
   width: 92%;
-  margin-top: var(--main-page-gap);
+  margin-top: var(--page-section-gap);
 }
 
 h1 {
@@ -70,9 +70,10 @@ nav > button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--main-page-gap);
+  gap: var(--page-section-gap);
 
   width: 100%;
+  padding-bottom: var(--page-section-gap);
 }
 
 .hero-image {
