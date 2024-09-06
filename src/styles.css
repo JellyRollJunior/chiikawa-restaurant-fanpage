@@ -110,10 +110,23 @@ nav > button {
 
   width: 100%;
   padding: 0 12px;
+
   border: 2px solid red;
 }
 
-.menu-item {
+.card {
   height: var(--menu-card-height);
+  text-align: center;
+  border-radius: 25%;
   border: 2px solid black;
+}
+
+.card > img {
+  margin-top: -15px;
+  width: 65%;
+}
+
+.card-title {
+  font-family: "rocksalt";
+  margin-bottom: 4px;
 }
