@@ -6,16 +6,10 @@ import rakko from "./images/rakko.png";
 import pajamaParties from "./images/pajama-parties.png";
 import momonga from "./images/momonga.png";
 import shisa from "./images/shisa.png";
+import { Helper } from "./helper.js";
 export { MenuPage };
 
 const MenuPage = (function () {
-    const createSeparator = (text = "") => {
-        const separator = document.createElement("div");
-        separator.classList.add("separator");
-        separator.textContent = text;
-        return separator;
-    };
-
     const createMenu = (...cards) => {
         const menu = document.createElement("div");
         menu.classList.add("restaurant-menu");
@@ -66,20 +60,13 @@ const MenuPage = (function () {
         );
     };
 
-    const contentRoot = document.querySelector("div#content");
-    const appendToRoot = (...elements) => {
-        for (const element of elements) {
-            contentRoot.appendChild(element);
-        }
-    };
-
     const renderMenuPage = () => {
-        appendToRoot(
-            createSeparator("Ramen"),
+        Helper.appendToRoot(
+            Helper.createSeparator("Ramen"),
             createRamenMenu(),
-            createSeparator("Drinks"),
+            Helper.createSeparator("Drinks"),
             createDrinkMenu(),
-            createSeparator("Desserts"),
+            Helper.createSeparator("Desserts"),
             createDessertMenu()
         );
     };

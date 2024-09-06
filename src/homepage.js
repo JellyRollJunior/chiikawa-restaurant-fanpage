@@ -1,4 +1,5 @@
 import chiikawaRamen from "./images/chiikawa-ramen.jpg";
+import { Helper } from "./helper.js";
 export { Homepage };
 
 const Homepage = (function () {
@@ -9,12 +10,6 @@ const Homepage = (function () {
         return heroImage;
     };
 
-    const createSeparator = () => {
-        const separator = document.createElement("div");
-        separator.classList.add("separator");
-        return separator;
-    };
-
     const createDescription = () => {
         const description = document.createElement("div");
         description.classList.add("restaurant-description");
@@ -22,18 +17,11 @@ const Homepage = (function () {
         return description;
     };
 
-    const contentRoot = document.querySelector("div#content");
-    const appendToRoot = (...elements) => {
-        for (const element of elements) {
-            contentRoot.appendChild(element);
-        }
-    };
-
     const renderHomepage = () => {
         const heroImage = createHeroImage();
-        const separator = createSeparator();
+        const separator = Helper.createSeparator();
         const description = createDescription();
-        appendToRoot(heroImage, separator, description);
+        Helper.appendToRoot(heroImage, separator, description);
     };
 
     return { renderHomepage };
