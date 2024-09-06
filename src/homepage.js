@@ -24,8 +24,8 @@ const Homepage = (function () {
         return description;
     };
 
-    const appendToRoot = () => {
-        for (const element of arguments) {
+    const appendToRoot = (...elements) => {
+        for (const element of elements) {
             contentRoot.appendChild(element);
         }
     };
@@ -34,9 +34,6 @@ const Homepage = (function () {
         const heroImage = createHeroImage();
         const separator = createSeparator();
         const description = createDescription();
-        contentRoot.appendChild(heroImage);
-        contentRoot.appendChild(separator);
-        contentRoot.appendChild(description);
         appendToRoot(heroImage, separator, description);
     };
 
