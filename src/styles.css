@@ -43,7 +43,7 @@ header {
   display: flex;
   justify-content: space-between;
 
-  width: 92%;
+  width: 88%;
   margin-top: var(--page-section-gap);
 }
 
