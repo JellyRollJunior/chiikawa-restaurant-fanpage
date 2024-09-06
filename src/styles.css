@@ -94,7 +94,7 @@ nav > button {
   background-color: var(--accent-color);
   height: 40px;
   margin: 0 24px;
-  width: 95%;
+  width: 92%;
   border-radius: 8px;
 }
 
@@ -116,7 +116,7 @@ nav > button {
   gap: 24px;
 
   width: 100%;
-  padding: 0 12px;
+  padding: 0 24px;
 }
 
 .card {
@@ -139,7 +139,7 @@ nav > button {
 .hours-and-location {
   display: grid;
   grid-template-columns: 300px 1fr;
-  width: 90%;
+  width: 85%;
 }
 
 .hours-and-location > div {
