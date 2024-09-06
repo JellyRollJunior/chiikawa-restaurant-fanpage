@@ -110,7 +110,7 @@ nav > button {
   white-space: pre-line;
 }
 
-.restaurant-menu {
+.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
@@ -171,4 +171,5 @@ nav > button {
 
 .bio {
   padding-top: 8px;
+  width: 95%;
 }
