@@ -1,4 +1,6 @@
 import kurimanju from "./images/kurimanju.png";
+import shisa from "./images/shisa.png";
+import ramenSan from "./images/ramen-san.png";
 export { MenuPage };
 
 const MenuPage = (function () {
@@ -40,9 +42,28 @@ const MenuPage = (function () {
             createCard(),
             createCard(),
             createCard(),
-            createCard(),
+            createCard()
         );
-    }
+    };
+
+    const createDrinkMenu = () => {
+        return createMenu(
+            createCard(
+                ramenSan,
+                "sanpincha",
+                "nomimono no mono osusumeshimasu"
+            ),
+            createCard()
+        );
+    };
+
+    const createDessertMenu = () => {
+        return createMenu(
+            createCard(shisa, "satapanbin", "ureshisa - nodo kawaichau kara"),
+            createCard(),
+            createCard()
+        );
+    };
 
     const contentRoot = document.querySelector("div#content");
     const appendToRoot = (...elements) => {
@@ -52,10 +73,14 @@ const MenuPage = (function () {
     };
 
     const renderMenuPage = () => {
-        const ramenSeparator = createSeparator("Ramen");
-        const ramenMenu = createRamenMenu();
-
-        appendToRoot(ramenSeparator, ramenMenu);
+        appendToRoot(
+            createSeparator("Ramen"),
+            createRamenMenu(),
+            createSeparator("Drinks"),
+            createDrinkMenu(),
+            createSeparator("Desserts"),
+            createDessertMenu()
+        );
     };
 
     return { renderMenuPage };
